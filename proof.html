@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Proof</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            flex: none;
+        }
+
+        .c-table {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 1;
+        }
+
+        .c-table__inner {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            height: 100%;
+            padding: 2px 0;
+            position: relative;
+        }
+
+        .c-table__row {
+            width: 100%;
+            padding: 2px 4px;
+        }
+
+        .c-table__row-inner {
+            height: 24px;
+            background-color: #82b8ec;
+        }
+
+        .c-table .c-table__row:nth-child(odd) .c-table__row-inner {
+            background-color: #ff9f9f;
+        }
+
+        .b {
+            position: relative;
+            z-index: 10;
+            display: inline-block;
+            height: 30px;
+            background-color: greenyellow;
+            width: 30px;
+            line-height: 30px;
+            text-align: center;
+            text-decoration: none;
+            color: black;
+            font-weight: 700;
+            margin-left: 50px;
+        }
+
+        .b +.b {
+            margin-left: 5px;
+        }
+
+        .b0:focus ~ * .c-table__inner {
+            left: 0;
+        }
+
+        .b1:focus ~ * .c-table__inner {
+            left: -100%;
+        }
+
+        .b2:focus ~ * .c-table__inner {
+            left: -200%;
+        }
+
+        .b3:focus ~ * .c-table__inner {
+            left: -300%;
+        }
+
+        .b4:focus ~ * .c-table__inner {
+            left: -400%;
+        }
+
+        .b5:focus ~ * .c-table__inner {
+            left: -500%;
+        }
+
+        .b6:focus ~ * .c-table__inner {
+            left: -600%;
+        }
+
+        .b7:focus ~ * .c-table__inner {
+            left: -700%;
+        }
+
+        .b8:focus ~ * .c-table__inner {
+            left: -800%;
+        }
+
+        .b9:focus ~ * .c-table__inner {
+            left: -900%;
+        }
+
+        .b10:focus ~ * .c-table__inner {
+            left: -1000%;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#" class="b b0">1</a>
+    <a href="#" class="b b1">2</a>
+    <a href="#" class="b b2">3</a>
+    <a href="#" class="b b3">4</a>
+    <a href="#" class="b b4">5</a>
+    <a href="#" class="b b5">6</a>
+    <a href="#" class="b b6">7</a>
+    <a href="#" class="b b7">8</a>
+    <a href="#" class="b b8">9</a>
+    <a href="#" class="b b9">10</a>
+    <a href="#" class="b b10">11</a>
+
+    <section class="c-table">
+        <div class="c-table__inner">
+            <div class="c-table__row">
+                <div class="c-table__row-inner">1</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">2</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">3</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">4</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">5</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">6</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">7</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">8</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">9</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">10</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">11</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">12</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">13</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">14</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">15</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">16</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">17</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">18</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">19</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">20</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">21</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">22</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">23</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">24</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">25</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">26</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">27</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">28</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">29</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">30</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">31</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">32</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">33</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">34</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">35</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">36</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">37</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">38</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">39</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">40</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">41</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">42</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">43</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">44</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">45</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">46</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">47</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">48</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">49</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">50</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">51</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">52</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">53</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">54</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">55</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">56</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">57</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">58</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">59</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">60</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">61</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">62</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">63</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">64</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">65</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">66</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">67</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">68</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">69</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">70</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">71</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">72</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">73</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">74</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">75</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">76</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">77</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">78</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">79</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">80</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">81</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">82</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">83</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">84</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">85</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">86</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">87</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">88</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">89</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">90</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">91</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">92</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">93</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">94</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">95</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">96</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">97</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">98</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">99</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">100</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">101</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">102</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">103</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">104</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">105</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">106</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">107</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">108</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">109</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">110</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">111</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">112</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">113</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">114</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">115</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">116</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">117</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">118</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">119</div>
+            </div>
+            <div class="c-table__row">
+                <div class="c-table__row-inner">120</div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
